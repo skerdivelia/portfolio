@@ -1,20 +1,12 @@
 import ThemeToggle from "./components/ThemeToggle";
 import Link from "next/link";
+import styles from "./HomePage.module.css";
 
 export default function HomePage() {
   return (
-    <main
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-around",
-        alignItems: "center",
-        minHeight: "60vh",
-        gap: "2rem",
-      }}
-    >
+    <main className={styles.container}>
       <ThemeToggle />
-      <div>
+      <div style={{ flex: 1}}>
         <h1>
           Hi, I'm <strong>Skerdi Velia</strong>
         </h1>
@@ -38,13 +30,7 @@ export default function HomePage() {
       <img
         src="profile-picture.jpg"
         alt="Skerdi Velia"
-        style={{
-          width: "200px",
-          height: "200px",
-          objectFit: "cover",
-          borderRadius: "50%",
-          boxShadow: "0 2px 12px rgba(0,0,0,0.1)",
-        }}
+        className={styles.profileImage}
       />
     </main>
   );

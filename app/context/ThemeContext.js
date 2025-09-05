@@ -4,7 +4,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
 
     useEffect(() => {
         // On mount, set theme from localStorage if it exists

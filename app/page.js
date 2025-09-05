@@ -28,7 +28,7 @@ export default function HomePage() {
         </p>
         <p>
           Check out my{" "}
-          <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
             Resume
           </a>
           , <Link href="/projects">Projects</Link> or{" "}
@@ -36,7 +36,7 @@ export default function HomePage() {
         </p>
       </div>
       <img
-        src="./profile-picture.jpg"
+        src="profile-picture.jpg"
         alt="Skerdi Velia"
         style={{
           width: "200px",
